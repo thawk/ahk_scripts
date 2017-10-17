@@ -36,3 +36,4 @@ CapsLock & 0::SendInput {Blind}{F10}
 CapsLock & -::SendInput {Blind}{F11}
 CapsLock & =::SendInput {Blind}{F12}
 
+CapsLock & SPACE::Winset, Alwaysontop, , A
