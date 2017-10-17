@@ -36,4 +36,12 @@ CapsLock & 0::SendInput {Blind}{F10}
 CapsLock & -::SendInput {Blind}{F11}
 CapsLock & =::SendInput {Blind}{F12}
 
+; Toggle Cap
+CapsLock & t::
+If GetKeyState("CapsLock", "T") = 1
+    SetCapsLockState, AlwaysOff
+Else 
+    SetCapsLockState, AlwaysOn
+Return
+
 CapsLock & SPACE::Winset, Alwaysontop, , A
